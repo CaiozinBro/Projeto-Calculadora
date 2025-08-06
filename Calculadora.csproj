@@ -18,12 +18,15 @@ namespace Calculadora
 	{
 	    public Calculadora()
 		{
-		: InitializeComponent();
+		 InitializeComponent();
 		}
 		
 	private void btnSomar_Click(Object sender, EvenArgs e)
 		{
-		: double numero1 = Convert.Todouble(txtnumero1.Text);	
+		 double numero1 = Convert.Todouble(txtnumero1.Text);
+		 double numero1 = Convert.Todouble(txtnumero2.Text);
+		 
+		 lblResultado.Text = (numero1 + numero2).Tostring();
 		}
 	}
 }

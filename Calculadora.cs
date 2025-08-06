@@ -6,5 +6,41 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+        //Validação de Campos
+
+
+
+        private void lblNumero1_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtNumero1.Text);
+            double numero2 = Convert.ToDouble(txtNumero2.Text);
+
+            lblResultado.Text = (numero1 + numero2).ToString();
+
+        }
+
+        private void btnSubtrair_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtNumero1.Text);
+            double numero2 = Convert.ToDouble(txtNumero1.Text);
+
+            lblResultado.Text = (numero1 - numero2).ToString();
+        }
+
+        private void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtNumero1.Text);
+            double numero2 = Convert.ToDouble(txtNumero2.Text);
+
+            lblResultado.Text = (numero1 * numero2).ToString();
+        }
+
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtNumero1.Text);
+            double numero2 = Convert.ToDouble(txtNumero2.Text);
+
+            lblResultado.Text = (numero1 / numero2).ToString();
+        }
     }
 }
