@@ -9,3 +9,21 @@
   </PropertyGroup>
 
 </Project>
+
+
+namespace Calculadora
+{
+    
+	public partial class Calculadora :  Form
+	{
+	    public Calculadora()
+		{
+		: InitializeComponent();
+		}
+		
+	private void btnSomar_Click(Object sender, EvenArgs e)
+		{
+		: double numero1 = Convert.Todouble(txtnumero1.Text);	
+		}
+	}
+}
